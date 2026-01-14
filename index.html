@@ -1,13 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="logo" href="#">
+          <img src="" alt="Логотип бургерной 'Burgos'" />
+        </a>
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#">Меню</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#">О нас</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#">Контанты</a>
+          </li>
+        </ul>
+        <a class="cart" href="#">
+          $125
+          <span class="cart-count"> 5 </span>
+        </a>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="hero">
+        <p class="way">Главная/Меню</p>
+        <h1 class="heading">Наше Меню</h1>
+        <p class="description">
+          Выбирай из предложенного ассортимента и мы доставим блюдо в течении
+          часа
+        </p>
+      </section>
+      <section class="stock">
+        <p class="benefit">Скидка</p>
+        <p class="discount">30%</p>
+        <p>
+          Только при покупке 3-х и более позиций, мы дарим скидку. Акции не
+          суммируются.
+        </p>
+        <button class="button">Купить сейчас</button>
+      </section>
+      <section class="menu">
+        <h2 class="menu-title">Бургеры</h2>
+        <!-- Тег select позволяет создать выпадающий список для выбора -->
+        <select сlass="list-choice" name="" id="">
+          <!-- Тег option — это отдельный пункт в списке.
+           disabled selected - отключенный выбранный пункт списка -->
+          <option сlass="list-choice-item" value="" disabled selected>
+            Сортировать
+          </option>
+          <option сlass="list-choice-item" value="">Дорогие</option>
+          <option сlass="list-choice-item" value="">Дешевые</option>
+        </select>
+        <ul class="menu-list">
+          <li>
+            <img class="menu-img" src="" alt="Острый бургер" />
+            <p class="name-burger">Острый бургер</p>
+            <p class="price">$26</p>
+            <button class="button button--buy">Купить</button>
+          </li>
+          <li>
+            <img class="menu-img" src="" alt="Гриль Бургер" />
+            <p class="name-burger">Гриль Бургер</p>
+            <p class="price">$16</p>
+            <button class="button button--buy">Купить</button>
+          </li>
+          <li>
+            <img class="menu-img" src="" alt="Бурег Гигант" />
+            <p class="name-burger">Бурег Гигант</p>
+            <p class="price">$37</p>
+            <button class="button button--buy">Купить</button>
+          </li>
+          <li>
+            <img class="menu-img" src="" alt="Бургер с курицей" />
+            <p class="name-burger">Бургер с курицей</p>
+            <p class="price">$18</p>
+            <button class="button button--buy">Купить</button>
+          </li>
+          <li>
+            <img class="menu-img" src="" alt="4 Бургера с курицей" />
+            <p class="name-burger">4 Бургера с курицей</p>
+            <p class="price">$9</p>
+            <button class="button button--buy">Купить</button>
+          </li>
+          <li>
+            <img class="menu-img" src="" alt="Тройной бургер" />
+            <p class="name-burger">Тройной бургер</p>
+            <p class="price">$7</p>
+            <button class="button button--buy">Купить</button>
+          </li>
+        </ul>
+      </section>
+      <section class="additionally">
+        <h2 class="menu-title">Дополнительно</h2>
+        <ul class="menu-list">
+          <li>
+            <img class="menu-img" src="" alt="Сэндвич" />
+            <p class="name-burger">Сэндвич</p>
+            <p class="price">$3</p>
+            <button class="button button--buy">Купить</button>
+          </li>
+          <li>
+            <img class="menu-img" src="" alt="Картошка Фри" />
+            <p class="name-burger">Картошка Фри</p>
+            <p class="price">$5</p>
+            <button class="button button--buy">Купить</button>
+          </li>
+          <li>
+            <img class="menu-img" src="" alt="Хот-Дог" />
+            <p class="name-burger">Хот-Дог</p>
+            <p class="price">$7</p>
+            <button class="button button--buy">Купить</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <img src="" alt="Логотип бургерной 'Burgos'" />
+      <h3 class="footer-title">Основные ссылки</h3>
+      <ul class="footer-menu">
+        <li class="footer-menu-item">
+          <a href="#">Меню</a>
+        </li>
+        <li class="footer-menu-item">
+          <a href="#">Заказ и Доставка</a>
+        </li>
+        <li class="footer-menu-item">
+          <a href="#">Методы оплата</a>
+        </li>
+        <li class="footer-menu-item">
+          <a href="#">Контанты</a>
+        </li>
+      </ul>
+      <h3 class="footer-title">Основная информация</h3>
+      <h4 class="subtitle">Время</h4>
+      <p class="work-hours">
+        Пн-Вс <br />
+        <time class="time" datetime="11:00-22:00">
+          11:00-22:00
+          <span class="break">без перерывов</span>
+        </time>
+      </p>
+      <h4 class="subtitle">Адрес</h4>
+      <address class="address">Москва, ул. Тверская, 5</address>
+      <ul class="contacts-list">
+        <li class="contacts-list-item">
+          <a href="tel:+79007871313">+ 7 900 787 13-13</a>
+        </li>
+        <li class="contacts-list-item">
+          <a href="tel:+79007001414">+ 7 900 700 14-14</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
