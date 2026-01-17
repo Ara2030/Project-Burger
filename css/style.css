@@ -1,0 +1,35 @@
+/* Header */
+.cart::before{
+    /* Добавление svg перед ссылкой с помощью псевдокласса (::before) */
+    content:" ";
+    background-image:url(../img/basket.svg);
+    background-repeat: no-repeat;
+    display: block;
+    width: 29px;
+    height: 26px;
+}
+/* / Header */
+/* Hero */
+.hero{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    height: 478px;
+    /* filter: brightness(); меняет яркость изображения.*/
+    filter: brightness(60%);
+}
+/* / Hero */
+/* Banner */
+.banner{
+    /* Добавление фоного изображение */
+    content: "";
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    width: 1180px;
+    height: 438px;
+}
+/* / Banner */
+/* Menu */
+.menu-img{
+    display:block;
+}
+/* / Menu */
